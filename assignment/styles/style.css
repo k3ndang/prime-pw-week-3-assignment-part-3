@@ -1,1 +1,16 @@
 /* give your assignment a fun background color */
+
+body {
+  background-color: rgb(255, 0, 153.0);
+}
+
+
+
+#one {
+  background-color: yellow;
+}
+
+.two {
+  background-color: blue;
+  color: white;
+}
