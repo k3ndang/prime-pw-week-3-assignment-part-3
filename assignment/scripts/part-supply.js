@@ -32,13 +32,13 @@ console.log('6. Showing supplyChanges...');
 for (var i = 0; i < supplyChanges.length; i++) {
   console.log(supplyChanges[i]);
   if (supplyChanges[i] > 0) {
-    console.log('Added x parts.');
+    console.log('Added ' + supplyChanges[i] + ' parts.');
   }
   if (supplyChanges[i] === 0) {
     console.log('No Change.');
   }
   if (supplyChanges[i] < 0) {
-    console.log('Removed x parts.');
+    console.log('Removed ' + supplyChanges[i] + ' parts.');
   }
 }
 
@@ -49,28 +49,28 @@ console.log('7. Showing supplyChanges with "for of" loop');
 for(let numbers of supplyChanges){
   console.log(numbers);
   if (numbers > 0) {
-    console.log('Added x parts.');
+    console.log('Added ' + numbers + ' parts.');
   }
   if (numbers === 0) {
     console.log('No change.');
   }
   if (numbers < 0) {
-    console.log('Removed x parts.');
+    console.log('Removed ' + numbers + ' parts.');
   }
 }
 // 8. Rewrite the `for` loop from #6 as a `while` loop.
 console.log('8. Showing supplyChanges with "while" loop');
 let x = 0;
 
-while (x <= supplyChanges.length){
+while (x < supplyChanges.length){
   if (supplyChanges[x] > 0) {
-    console.log('Added x parts.');
+    console.log('Added ' + supplyChanges[x] + ' parts.');
   }
-  if (supplyChanges[x] === 0) {
+  else if (supplyChanges[x] === 0) {
     console.log('No change.');
   }
-  if (supplyChanges[x] < 0) {
-    console.log('Removed x parts.');
+  else if (supplyChanges[x] < 0) {
+    console.log('Removed ' + supplyChanges[x] + ' parts.');
   }
   console.log(supplyChanges[x]);
   x++;
